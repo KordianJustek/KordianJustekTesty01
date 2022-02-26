@@ -31,12 +31,10 @@ def sprawdz(maszyna,czlowiek):
 z = 0
 
 tablica_wygrane = [0,0,0,0,0,0,0]
-ile_losowan = input("Podaj liczbe losowan: ")
-while z < int(ile_losowan):
+
+while z < 48000000:
     maszyna = losowanie()
     czlowiek = losowanie()
-    print()
-    print(f'Losowanie numer: {z}')
     print(f'Maszyna losujaca: {maszyna}' )
     print(f'Liczby Gracza   : {czlowiek} ' )
     wygrane = sprawdz(czlowiek,maszyna)
@@ -49,9 +47,4 @@ while z < int(ile_losowan):
         a+=1
 
 
-print(f"Statystyka:     {tablica_wygrane }")
-print(f"Ilosc trojek:   {tablica_wygrane[3]}")
-print(f"Ilosc czworek:  {tablica_wygrane[4]}")
-print(f"Ilosc piatek:   {tablica_wygrane[5]}")
-print(f"Ilosc szostek:  {tablica_wygrane[6]}")
-print(f"Ilość losowań:  {ile_losowan} ")
+print(f"trafiono: {tablica_wygrane }")
