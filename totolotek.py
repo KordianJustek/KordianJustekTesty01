@@ -46,5 +46,4 @@ while z < 48000000:
             tablica_wygrane[a] =tablica_wygrane[a] + 1
         a+=1
 
-
-print(f"trafiono: {tablica_wygrane }")
+x = print(f"trafiono: {tablica_wygrane}")

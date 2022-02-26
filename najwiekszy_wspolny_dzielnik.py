@@ -6,7 +6,8 @@ def nwd(a,b):
             b-=a
     return a
 
-a = input("Podaj a: ")
-b = input("Podaj: ")
+a = int(input("Podaj a: "))
+b = int(input("Podaj:b "))
 
-print(f"NWD: {nwd(int(a),int(b))}")
+print(f"Najwiekszy Wspolny Dzielnik: {nwd(int(a),int(b))}")
+print(f'Najmniejsza Wspolna Wielokrotnosc: {int((a*b)/nwd(a,b))} ')
